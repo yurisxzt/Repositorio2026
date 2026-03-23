@@ -1,16 +1,3 @@
-using UnityEngine;
-
-public class NewMonoBehaviourScript : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+// This file was replaced to avoid duplicate class definitions.
+// The implementation has moved to `PlayerController.cs`.
+// Keep this file if you need to preserve version history or references.
