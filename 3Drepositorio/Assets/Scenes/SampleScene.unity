@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ce37521e4e5894eb23d790487dfb5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameplayManager
-  playerInput: {fileID: 0}
+  playerInput: {fileID: 1453767205}
 --- !u!4 &1067613125
 Transform:
   m_ObjectHideFlags: 0
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bef1bb82137842039c7a8bfd9098c665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveAction: {fileID: 0}
+  moveAction: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   moveSpeed: 5
 --- !u!54 &1453767207
 Rigidbody:
