@@ -60,4 +60,15 @@ public class GameManager : MonoBehaviour
     {
         player.SwitchCurrentControlScheme("Keyboard&Mouse");
     }
+    public void LoadGameplay()
+{
+    if (PodeTrocarCena())
+    {
+        SceneManager.LoadScene("SampleScene");
+
+        SceneManager.LoadScene("GUI", LoadSceneMode.Additive);
+
+        SetState(GameState.Gameplay);
+    }
+}
 }

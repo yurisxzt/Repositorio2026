@@ -9,7 +9,7 @@ public class MenuPrincipalUI : MonoBehaviour
 
     public void IniciarJogo()
     {
-        GameManager.Instance.LoadScene("SampleScene");
+        GameManager.Instance.LoadGameplay();
     }
 
     public void SairJogo()
