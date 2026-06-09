@@ -2,14 +2,22 @@ using UnityEngine;
 
 public class PlayerCoins : MonoBehaviour
 {
-    private int moedas = 0;
+    private int coins;
 
-    public void AddCoin()
+    private void OnEnable()
     {
-        moedas++;
+        PlayerObserverManager.OnCoinCollected += CollectCoin;
+    }
 
-        Debug.Log("Moedas: " + moedas);
+    private void OnDisable()
+    {
+        PlayerObserverManager.OnCoinCollected -= CollectCoin;
+    }
 
-        PlayerOM.NotifyCoinsChanged(moedas);
+    private void CollectCoin()
+    {
+        coins++;
+
+        PlayerObserverManager.NotifyCoinChanged(coins);
     }
 }
